@@ -28,6 +28,7 @@ body {
 }
 
 .user {
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,24 +117,31 @@ body {
     flex-direction: column;
 }
 
+.chat_head {
+    height: 5rem;
+    background-color: white;
+}
+
 .msg {
-    height: 70%;
+    height: calc(100% - 5rem);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .msg .chat {
-    height: 2rem;
     width: 8rem;
     border-radius: 5px;
 }
 
 .msg .green {
     background-color: #4af805b9;
+    align-self: end;
+    width: 90%;
 }
 
 .msg .white {
     background-color: white;
+    padding-left: 3rem;
 }
 
 .controls {
