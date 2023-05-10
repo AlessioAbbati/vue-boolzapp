@@ -41,7 +41,8 @@
                         <img :src="contact.avatar" alt="">
                         <div class="txt_avatar">
                             <div class="name">{{ contact.name }}</div>
-                            <div class="date"></div>
+                            <div class="date">{{ contact.messages[0].date }}</div>
+                            <div class="last_msg">{{ contact.messages[0].message }}</div>
                         </div>
                     </div>
                     

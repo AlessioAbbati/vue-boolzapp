@@ -176,13 +176,7 @@ const app = Vue.createApp({
         };
     },
     methods: {
-        // addUser() {
-        //     this.user.unshift({
-        //         name: 'Mandrake',
-        //         avatar: 'img/avatar_io.jpg',
-
-        //     });
-        // }
+        
 
     },
 });

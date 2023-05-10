@@ -84,6 +84,16 @@ body {
     padding-left: 1rem;
 }
 
+.date {
+    font-size: .4rem;
+    
+}
+
+.last_msg {
+    font-size: .5rem;
+    padding-left: 1rem;
+}
+
 .chat_bar {
     background-image: url("img/mine.jpg");
     height: 100%;
