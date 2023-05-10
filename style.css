@@ -32,6 +32,7 @@ body {
     align-items: center;
     padding-inline: 1rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .user img {
     width: 20%;
@@ -40,6 +41,23 @@ body {
 .emoticon i {
     padding-inline: 5px;
     color: gray;
+}
+
+.notification {
+    background-color: #8EDAFC;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.txt {
+    font-size: .7rem;
+    padding-left: 2rem;
+}
+
+.bell {
+    padding-left: 1rem;
 }
 
 .chat_bar {
