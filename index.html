@@ -35,6 +35,19 @@
                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
                 <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat">
             </div>
+            <div class="scroll">
+                <div class="chat_users" v-for="(contact, index) in contacts" :key="index">
+                    <div class="img_avatar">
+                        <img :src="contact.avatar" alt="">
+                        <div class="txt_avatar">
+                            <div class="name">{{ contact.name }}</div>
+                            <div class="date"></div>
+                        </div>
+                    </div>
+                    
+     
+                </div>
+            </div>
         </div>
         <div class="chat_bar">
             <div class="msg">
