@@ -67,7 +67,10 @@ body {
 
 .img_avatar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 1rem;
+
 }
 
 .img_avatar img {
@@ -77,6 +80,8 @@ body {
 
 .txt_avatar {
     padding-top: .4rem;
+    display: flex;
+    position: relative;
 }
 
 .name {
@@ -86,12 +91,13 @@ body {
 
 .date {
     font-size: .4rem;
-    
 }
 
 .last_msg {
     font-size: .5rem;
-    padding-left: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 3.5rem;
 }
 
 .chat_bar {
