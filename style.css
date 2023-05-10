@@ -33,4 +33,19 @@ body {
     width: 65%;
     border-right: 10px solid white;
     border-bottom: 10px solid white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.controls {
+    background-color: white;
+}
+
+.controls i {
+    padding-inline: 1rem;
+}
+
+.controls input {
+    width: 80%;
 }
