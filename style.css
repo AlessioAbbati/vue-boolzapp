@@ -5,10 +5,32 @@
 }
 
 body {
+    display: grid;
+    place-items: center;
     height: 100vh;
     background: linear-gradient(
         to bottom,
         #009688 20%,
         #D8DBD5 20%
     );
+}
+
+#app {
+    height: 90%;
+    width: 70%;
+    background-color: white;
+    display: flex;
+}
+
+.user-bar {
+    height: 100%;
+    width: 35%;
+}
+
+.chat-bar {
+    background-color: #E3DBD3;
+    height: 100%;
+    width: 65%;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
 }
