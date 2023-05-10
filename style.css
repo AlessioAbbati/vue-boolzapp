@@ -29,6 +29,7 @@ body {
 
 .user {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-inline: 1rem;
     padding-top: 1rem;
@@ -36,6 +37,10 @@ body {
 }
 .user img {
     width: 20%;
+}
+
+.emoticon {
+    display: flex;
 }
 
 .emoticon i {

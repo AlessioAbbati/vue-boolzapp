@@ -14,8 +14,11 @@
     <div id="app">
         <div class="user_bar">
             <div class="user">
-                <img :src="user.avatar" alt="">
-                {{ user.name }}
+                
+                <div class="user_name">
+                    <img :src="user.avatar" alt="">
+                    {{ user.name }}
+                </div>
                 <div class="emoticon">
                     <i class="bi bi-circle"></i>
                     <i class="fa-solid fa-message"></i>
