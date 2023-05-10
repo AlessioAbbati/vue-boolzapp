@@ -2,8 +2,8 @@ const app = Vue.createApp({
     data() {
         return {
             user: {
-                name: 'Michele',
-                avatar: 'img/avatar_io.jpg',
+                name: 'Mandrake',
+                avatar: 'img/Logo maglietta - Versione finale.png',
             },
             activeIndex: 0,
             newMessage: '',
@@ -176,6 +176,13 @@ const app = Vue.createApp({
         };
     },
     methods: {
+        // addUser() {
+        //     this.user.unshift({
+        //         name: 'Mandrake',
+        //         avatar: 'img/avatar_io.jpg',
+
+        //     });
+        // }
 
     },
 });

@@ -22,12 +22,27 @@ body {
     display: flex;
 }
 
-.user-bar {
+.user_bar {
     height: 100%;
     width: 35%;
 }
 
-.chat-bar {
+.user {
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+}
+.user img {
+    width: 20%;
+}
+
+.emoticon i {
+    padding-inline: 5px;
+    color: gray;
+}
+
+.chat_bar {
     background-image: url("img/mine.jpg");
     height: 100%;
     width: 65%;
@@ -36,6 +51,26 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+}
+
+.msg {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.msg .chat {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 5px;
+}
+
+.msg .green {
+    background-color: #4af805b9;
+}
+
+.msg .white {
+    background-color: white;
 }
 
 .controls {

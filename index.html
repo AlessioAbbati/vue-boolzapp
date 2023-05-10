@@ -12,23 +12,38 @@
 </head>
 <body>
     <div id="app">
-        <div class="user-bar">
-
+        <div class="user_bar">
+            <div class="user">
+                <img :src="user.avatar" alt="">
+                {{ user.name }}
+                <div class="emoticon">
+                    <i class="bi bi-circle"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
         </div>
-        <div class="chat-bar">
+        <div class="chat_bar">
+            <div class="msg">
+                <div class="chat white">
+
+                </div>
+                <div class="chat green">
+
+                </div>
+            </div>
+            
             <div class="controls">
                 <i class="fa-regular fa-face-smile"></i>
                 <input type="text" placeholder="New message">
                 <i class="fa-solid fa-microphone"></i>
             </div>
-            
-
         </div>
         
 
     </div>
-
-    
+    <!-- <img src="img/Logo maglietta - Versione finale.png" alt=""> -->
+    <!-- <img src="img/avatar_io.jpg" alt=""> -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="vue.js"></script>
 </body>
