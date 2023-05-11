@@ -48,7 +48,7 @@ const app = Vue.createApp({
                         },
                         {
                             date: '20/03/2020 16:35:00',
-                            message: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            message: 'Mi piacerebbe ma devo andare a fare la spesaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.',
                             status: 'sent'
                         }
                     ],

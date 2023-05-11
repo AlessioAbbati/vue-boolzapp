@@ -16,7 +16,7 @@ body {
 }
 
 #app {
-    height: 90%;
+    height: 550px;
     width: 70%;
     background-color: white;
     display: flex;
@@ -93,6 +93,8 @@ body {
 .name {
     font-size: .7rem;
     padding-left: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .date {
@@ -104,6 +106,8 @@ body {
     position: absolute;
     bottom: 0;
     left: 3.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .chat_bar {
@@ -123,7 +127,7 @@ body {
 }
 
 .msg {
-    height: calc(100% - 6rem);
+    max-height: calc(100% - 6rem);
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
