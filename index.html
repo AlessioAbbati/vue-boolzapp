@@ -59,22 +59,11 @@
                 <div class="name">{{ contacts[activeIndex].name }}</div>
             </div>
             <div class="msg">
-                <div class="chat white">
-                    <div class="chat_text">
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aliquid cumque expedita maiores accusantium minus rerum, perspiciatis debitis odio velit consequatur, consectetur doloremque vero culpa beatae, voluptas quibusdam. Eligendi, labore!
-                       <div class="chat_date">
-                        10/01/2020 15:30:55
-                       </div>
-                    </div>
+                <div class="chat" v-for="message in contacts[activeIndex].messages" :class="message.status == 'sent' ? 'green' : 'white'">
+                    <span class="chat_text">{{ message.message }}</span>
+                    <span class="chat_date">{{ message.date }}</span>
                 </div>
-                <div class="chat green">
-                    <div class="chat_text">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur a architecto natus quaerat soluta quasi ex molestiae ab corrupti? Quidem itaque, distinctio iusto provident consequuntur fugit assumenda quis aperiam.
-                       <div class="chat_date">
-                        10/01/2020 15:30:55
-                       </div>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="controls">

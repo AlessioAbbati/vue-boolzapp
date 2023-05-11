@@ -135,35 +135,35 @@ body {
 
 .msg {
     height: calc(100% - 6rem);
-    display: flex;
-    flex-direction: column;
     overflow-y: scroll;
 }
 
-.msg .chat {
+.msg.chat {
     border-radius: 5px;
     text-align: center;
-    max-width: 60%;
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.msg .green {
+.msg .chat.green {
     background-color: #4af805b9;
     align-self: end;
     
 }
 
-.msg .white {
+.msg .chat.white {
     background-color: white;
     align-self: start;
 }
 
-.chat .chat_text {
-    padding: .8em;
+.chat_text {
+    padding: 1rem;
     font-size: .8rem;
+    max-width: 60%;
+    margin: 1rem;
 }
 
-.chat .chat_text .chat_date {
+.chat_date {
     font-size: .6rem;
 }
 
