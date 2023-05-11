@@ -123,29 +123,42 @@ body {
 }
 
 .msg {
-    height: calc(100% - 5rem);
+    height: calc(100% - 6rem);
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 .msg .chat {
-    width: 8rem;
     border-radius: 5px;
+    text-align: center;
+    max-width: 60%;
+    margin: 1rem;
 }
 
 .msg .green {
     background-color: #4af805b9;
     align-self: end;
-    width: 90%;
+    
 }
 
 .msg .white {
     background-color: white;
-    padding-left: 3rem;
+    align-self: start;
+}
+
+.chat .chat_text {
+    padding: .8em;
+    font-size: .8rem;
+}
+
+.chat .chat_text .chat_date {
+    font-size: .6rem;
 }
 
 .controls {
     background-color: white;
+    height: 1rem;
 }
 
 .controls i {

@@ -14,7 +14,7 @@
     <div id="app">
         <div class="user_bar">
             <div class="user">
-                
+
                 <div class="user_name">
                     <img :src="user.avatar" alt="">
                     {{ user.name }}
@@ -48,8 +48,8 @@
                         </div>
                         <div class="date">{{ contact.messages[contact.messages.length - 1].date }}</div>
                     </div>
-                    
-     
+
+
                 </div>
             </div>
         </div>
@@ -59,23 +59,35 @@
             </div>
             <div class="msg">
                 <div class="chat white">
-                    ciao
+                    <div class="chat_text">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aliquid cumque expedita maiores accusantium minus rerum, perspiciatis debitis odio velit consequatur, consectetur doloremque vero culpa beatae, voluptas quibusdam. Eligendi, labore!
+                       <div class="chat_date">
+                        10/01/2020 15:30:55
+                       </div>
+                    </div>
+                    
                 </div>
                 <div class="chat green">
-                    ciao
+                    <div class="chat_text">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur a architecto natus quaerat soluta quasi ex molestiae ab corrupti? Quidem itaque, distinctio iusto provident consequuntur fugit assumenda quis aperiam.
+                       <div class="chat_date">
+                        10/01/2020 15:30:55
+                       </div>
+                    </div>
                 </div>
+
             </div>
-            
+
             <div class="controls">
                 <i class="fa-regular fa-face-smile"></i>
                 <input type="text" placeholder="New message">
                 <i class="fa-solid fa-microphone"></i>
             </div>
         </div>
-        
+
 
     </div>
-    
+
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="vue.js"></script>
 </body>
