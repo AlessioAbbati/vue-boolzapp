@@ -68,7 +68,7 @@
 
             <div class="controls">
                 <i class="fa-regular fa-face-smile"></i>
-                <input type="text" placeholder="New message">
+                <input @keyup.enter="addMessage(newMessage)" type="text" placeholder="New message" v-model="newMessage">
                 <i class="fa-solid fa-microphone"></i>
             </div>
         </div>

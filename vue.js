@@ -180,6 +180,15 @@ const app = Vue.createApp({
             this.activeIndex = index;
             
         },
+        addMessage(nuovoMessaggio) {
+            let newMex = {
+                date: '10/10/22 15.00.30',
+                message: nuovoMessaggio,
+                status: 'sent',
+            };
+            this.contacts[this.activeIndex].messages.push(newMex);
+
+        },
 
     },
 });
