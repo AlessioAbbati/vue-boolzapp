@@ -124,6 +124,13 @@ body {
 .chat_head {
     height: 5rem;
     background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.chat_head img {
+    width: 10%;
+    border-radius: 50%;
 }
 
 .msg {

@@ -39,7 +39,7 @@
                 <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat">
             </div>
             <div class="scroll">
-                <div class="chat_users" v-for="(contact, index) in contacts" :key="index">
+                <div class="chat_users" @click="setActiveIndex(index)" v-for="(contact, index) in contacts" :key="index">
                     <div class="img_avatar">
                         <div class="txt_avatar">
                             <img :src="contact.avatar" alt="">
@@ -55,9 +55,19 @@
         </div>
         <div class="chat_bar">
             <div class="chat_head">
-
+                <img :src="contacts[activeIndex].avatar" alt="">
+                <div class="name">{{ contacts[activeIndex].name }}</div>
             </div>
             <div class="msg">
+                <div class="chat white">
+                    <div class="chat_text">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aliquid cumque expedita maiores accusantium minus rerum, perspiciatis debitis odio velit consequatur, consectetur doloremque vero culpa beatae, voluptas quibusdam. Eligendi, labore!
+                       <div class="chat_date">
+                        10/01/2020 15:30:55
+                       </div>
+                    </div>
+                    
+                </div>
                 <div class="chat white">
                     <div class="chat_text">
                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aliquid cumque expedita maiores accusantium minus rerum, perspiciatis debitis odio velit consequatur, consectetur doloremque vero culpa beatae, voluptas quibusdam. Eligendi, labore!
