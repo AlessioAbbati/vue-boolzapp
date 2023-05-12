@@ -62,13 +62,20 @@
         <div class="chat_bar">
             <div class="chat_head">
                 <img :src="contacts[activeIndex].avatar" alt="">
-                <div class="name">{{ contacts[activeIndex].name }}</div>
-                <div class="date">{{ returnDate(dateNow) }}</div>
+                <div class="name">{{ contacts[activeIndex].name }}
+                    <div class="date">Ultimo accesso: {{ returnDate(dateNow) }}</div>
+                </div>
+                
             </div>
             <div class="msg">
-                <div class="chat" v-for="message in contacts[activeIndex].messages" :class="message.status == 'sent' ? 'green' : 'white'">
+                <div 
+                    class="chat" 
+                    v-for="(message, index) in contacts[activeIndex].messages" 
+                    :class="message.status == 'sent' ? 'green' : 'white'"
+                >
                     <span class="chat_text">{{ message.message }}</span>
                     <span class="chat_date">{{ message.date.slice(11, 16) }}</span>
+                    <!-- <i class="bi bi-xbox" @click="deleteItem(activeIndex, index)"></i> -->
                 </div>
                 
             </div>

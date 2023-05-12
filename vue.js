@@ -190,7 +190,6 @@ const app = Vue.createApp({
             this.contacts[this.activeIndex].messages.push(newMex);
             this.newMessage = '';
             setTimeout(this.pcMessage, 1000);
-
         },
         pcMessage() {
             let pcMex = {
@@ -203,6 +202,9 @@ const app = Vue.createApp({
         returnDate(dateNow) {
             return luxon.DateTime.now(dateNow).toFormat('dd/MM/yyyy HH:mm:ss');
         },
+        // deleteItem(activeIndex, index) {
+        //     this.contacts[activeIndex].messages[index].splice(index, 1);
+        // },
         
     },
     computed: {
