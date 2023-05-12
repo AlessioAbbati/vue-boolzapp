@@ -8,6 +8,7 @@ const app = Vue.createApp({
             activeIndex: 0,
             newMessage: '',
             searchStr: '',
+            dateNow: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -182,7 +183,7 @@ const app = Vue.createApp({
         },
         addMessage(nuovoMessaggio) {
             let newMex = {
-                date: '10/01/2020 15:50:00',
+                date: '10/01/2020 15:51:00',
                 message: nuovoMessaggio,
                 status: 'sent',
             };
@@ -193,11 +194,14 @@ const app = Vue.createApp({
         },
         pcMessage() {
             let pcMex = {
-                date: '10/01/2020 15:50:00',
+                date: '10/01/2020 15:51:00',
                 message: 'danzi mai con il diavolo nel pallido plenilunio?!',
                 status: 'received',
             };
             this.contacts[this.activeIndex].messages.push(pcMex);
+        },
+        returnDate(dateNow) {
+            return luxon.DateTime.now(dateNow).toFormat('dd/MM/yyyy HH:mm:ss');
         },
         
     },
