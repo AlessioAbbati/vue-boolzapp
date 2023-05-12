@@ -202,9 +202,9 @@ const app = Vue.createApp({
         returnDate(dateNow) {
             return luxon.DateTime.now(dateNow).toFormat('dd/MM/yyyy HH:mm:ss');
         },
-        // deleteItem(activeIndex, index) {
-        //     this.contacts[activeIndex].messages[index].splice(index, 1);
-        // },
+        deleteItem(index) {
+            this.contacts[this.activeIndex].messages.splice(index, 1);
+        },
         
     },
     computed: {

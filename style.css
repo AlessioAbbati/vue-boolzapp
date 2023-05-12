@@ -153,6 +153,11 @@ body {
     margin: 1rem;
 }
 
+.msg .chat i {
+    padding-inline: .5rem;
+    cursor: pointer;
+}
+
 .msg .green {
     background-color: #4af805b9;
     align-self: end;
