@@ -36,7 +36,7 @@
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
-                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat">
+                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" v-model="searchStr" @keyup.enter="filteredContact(searchStr)">
             </div>
             <div class="scroll">
                 <div class="chat_users" @click="setActiveIndex(index)" v-for="(contact, index) in contacts" :key="index">
@@ -61,7 +61,7 @@
             <div class="msg">
                 <div class="chat" v-for="message in contacts[activeIndex].messages" :class="message.status == 'sent' ? 'green' : 'white'">
                     <span class="chat_text">{{ message.message }}</span>
-                    <span class="chat_date">{{ message.date }}</span>
+                    <span class="chat_date">{{ message.date.slice(11, 16) }}</span>
                 </div>
                 
             </div>

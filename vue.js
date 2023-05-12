@@ -197,8 +197,11 @@ const app = Vue.createApp({
                 status: 'received',
             };
             this.contacts[this.activeIndex].messages.push(pcMex);
-        }
-
+        },
+        filteredContact(filter) {
+            this.contacts.filter(contact => contact.name.includes(filter));
+        },
+        
     },
 });
 
