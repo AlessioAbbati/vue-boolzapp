@@ -36,17 +36,23 @@
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
-                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" v-model="searchStr" @keyup.enter="filteredContact(searchStr)">
+                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" v-model="searchStr">
             </div>
             <div class="scroll">
-                <div class="chat_users" @click="setActiveIndex(index)" v-for="(contact, index) in contacts" :key="index">
+                <div 
+                    v-for="(contact, index) in filter" 
+                    class="chat_users" 
+                    :class="{active: index == activeIndex}" 
+                    @click="activeChat(contact)" 
+                    :key="contact.name"
+                >
                     <div class="img_avatar">
                         <div class="txt_avatar">
                             <img :src="contact.avatar" alt="">
                             <div class="name">{{ contact.name }}</div>
                             <div class="last_msg">{{ contact.messages[contact.messages.length - 1].message }}</div>
                         </div>
-                        <div class="date">{{ contact.messages[contact.messages.length - 1].date }}</div>
+                        <div class="date">{{ contact.messages[contact.messages.length - 1].date.slice(0, 11) }}</div>
                     </div>
 
 
@@ -57,6 +63,7 @@
             <div class="chat_head">
                 <img :src="contacts[activeIndex].avatar" alt="">
                 <div class="name">{{ contacts[activeIndex].name }}</div>
+                
             </div>
             <div class="msg">
                 <div class="chat" v-for="message in contacts[activeIndex].messages" :class="message.status == 'sent' ? 'green' : 'white'">

@@ -176,32 +176,38 @@ const app = Vue.createApp({
         };
     },
     methods: {
-        setActiveIndex(index) {
-            this.activeIndex = index;
+        activeChat(index) {
+            this.activeIndex = this.contacts.indexOf(index);
             
         },
         addMessage(nuovoMessaggio) {
             let newMex = {
-                date: '10/10/22 15.00.30',
+                date: '10/01/2020 15:50:00',
                 message: nuovoMessaggio,
                 status: 'sent',
             };
             this.contacts[this.activeIndex].messages.push(newMex);
+            this.newMessage = '';
             setTimeout(this.pcMessage, 1000);
 
         },
         pcMessage() {
             let pcMex = {
-                date: '10/10/22 15.00.30',
+                date: '10/01/2020 15:50:00',
                 message: 'danzi mai con il diavolo nel pallido plenilunio?!',
                 status: 'received',
             };
             this.contacts[this.activeIndex].messages.push(pcMex);
         },
-        filteredContact(filter) {
-            this.contacts.filter(contact => contact.name.includes(filter));
-        },
         
+    },
+    computed: {
+        filter() {
+            return this.contacts.filter((contacts) => {
+                return contacts.name.toLowerCase().includes(this.searchStr.toLowerCase());
+            },
+            
+        )},
     },
 });
 

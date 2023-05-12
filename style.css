@@ -71,6 +71,11 @@ body {
     height: 60%;
 }
 
+.scroll .chat_users.active {
+    background-color: #009688;
+    cursor: pointer;
+}
+
 .img_avatar {
     display: flex;
     justify-content: space-between;
