@@ -49,7 +49,7 @@ const app = Vue.createApp({
                         },
                         {
                             date: '20/03/2020 16:35:00',
-                            message: 'Mi piacerebbe ma devo andare a fare la spesaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.',
+                            message: 'Mi piacerebbe ma devo andare a fare la spesa.',
                             status: 'sent'
                         }
                     ],
@@ -183,7 +183,7 @@ const app = Vue.createApp({
         },
         addMessage(nuovoMessaggio) {
             let newMex = {
-                date: this.returnDate().slice(11, 16),
+                date: this.returnDate(),
                 message: nuovoMessaggio,
                 status: 'sent',
             };
@@ -193,7 +193,7 @@ const app = Vue.createApp({
         },
         pcMessage() {
             let pcMex = {
-                date: this.returnDate().slice(11, 16),
+                date: this.returnDate(),
                 message: 'danzi mai con il diavolo nel pallido plenilunio?!',
                 status: 'received',
             };

@@ -72,15 +72,12 @@
             </div>
             <div class="msg">
                 <div 
-                    class="chat" 
+                    class="chat d-flex flex-column" 
                     v-for="(message, index) in contacts[activeIndex].messages" 
                     :class="message.status == 'sent' ? 'green' : 'white'"
                 >
-                    <span class="chat_text">{{ message.message }}</span>
-                    <span class="chat_date">{{ message.date }}</span>
-                    <!-- <i class="bi bi-xbox" @click="deleteItem"></i> -->
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle p-0 m-0" style="border: 0; color: black;" type="button"
+                    <div class="dropdown align-self-end">
+                        <button class="btn dropdown-toggle p-0 m-0" style="border: 0; color: black;" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                         </button>
                         <ul class="dropdown-menu">
@@ -88,6 +85,10 @@
                             <li @click="deleteItem(index)"><a class="dropdown-item" href="#">Cancella messaggio</a></li>
                         </ul>
                     </div>
+                    <span class="chat_text">{{ message.message }}</span>
+                    <span class="chat_date align-self-end">{{ message.date.slice(11, 16) }}</span>
+                    <!-- <i class="bi bi-xbox" @click="deleteItem"></i> -->
+                    
                 </div>
                 
             </div>

@@ -172,10 +172,7 @@ body {
 }
 
 .chat_text {
-    padding: 1rem;
-    font-size: .8rem;
-    max-width: 60%;
-    margin: 1rem;
+    font-size: .8rem;    
 }
 
 .chat_date {
