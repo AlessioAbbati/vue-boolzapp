@@ -191,3 +191,11 @@ body {
 .controls input {
     width: 80%;
 }
+
+.controls .dropdown-menu span {
+    cursor: pointer;
+}
+
+.controls .dropdown-menu {
+    width: 1rem;
+}

@@ -87,7 +87,7 @@
                     </div>
                     <span class="chat_text">{{ message.message }}</span>
                     <span class="chat_date align-self-end">{{ message.date.slice(11, 16) }}</span>
-                    <!-- <i class="bi bi-xbox" @click="deleteItem"></i> -->
+                    
                     
                 </div>
                 
@@ -101,7 +101,7 @@
                 </button>
                 <div class="dropdown-menu">
                     <template v-for="(emoticon, index) in emoticons">
-                        <span>{{ emoticon }}</span>
+                        <span @click="addEmoticon(index)">{{ emoticon }}</span>
 
                     </template>
                 </div>
