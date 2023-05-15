@@ -94,7 +94,18 @@
             </div>
 
             <div class="controls">
-                <i class="fa-regular fa-face-smile"></i>
+            
+                <button class="btn p-0 m-0" style="border: 0; color: black;" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-regular fa-face-smile dropdown"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <template v-for="(emoticon, index) in emoticons">
+                        <i :class="['bi', emoticons[index]]"></i>
+
+                    </template>
+                </div>
+            
                 <input @keyup.enter="addMessage(newMessage)" type="text" placeholder="New message" v-model="newMessage">
                 <i class="fa-solid fa-microphone"></i>
             </div>

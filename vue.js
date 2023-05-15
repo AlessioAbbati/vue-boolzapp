@@ -1,6 +1,12 @@
 const app = Vue.createApp({
     data() {
         return {
+            emoticons: [
+                "bi-emoji-angry",
+                "bi-emoji-dizzy",
+                "bi-emoji-wink",
+                "bi-emoji-sunglasses",
+            ],
             user: {
                 name: 'Mandrake',
                 avatar: 'img/Logo maglietta - Versione finale.png',
