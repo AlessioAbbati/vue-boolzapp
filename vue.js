@@ -2,10 +2,14 @@ const app = Vue.createApp({
     data() {
         return {
             emoticons: [
-                "bi-emoji-angry",
-                "bi-emoji-dizzy",
-                "bi-emoji-wink",
-                "bi-emoji-sunglasses",
+                '\u{1F600}', 
+                '\u{1F601}', 
+                '\u{1F602}', 
+                '\u{1F603}', 
+                '\u{1F604}', 
+                '\u{1F605}', 
+                '\u{1F606}', 
+                '\u{1F607}',
             ],
             user: {
                 name: 'Mandrake',
