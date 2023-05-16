@@ -105,6 +105,18 @@
 
                     </template>
                 </div>
+
+                <button class="btn p-0 m-0" style="border: 0; color: black;" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-paperclip"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <template v-for="(attach, index) in attachment">
+                        <i :class="['bi', attachment[index]]"></i>
+
+                    </template>
+                </div>
+
             
                 <input @keyup.enter="addMessage(newMessage)" type="text" placeholder="New message" v-model="newMessage">
                 <i class="fa-solid fa-microphone"></i>

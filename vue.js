@@ -1,6 +1,14 @@
 const app = Vue.createApp({
     data() {
         return {
+            attachment: [
+                'bi-image-fill',
+                'bi-sticky-fill',
+                'bi-camera-fill',
+                'bi-file-earmark',
+                'bi-person-fill',
+                'bi-bar-chart-fill',
+            ],
             emoticons: [
                 '\u{1F600}', 
                 '\u{1F601}', 
@@ -82,9 +90,7 @@ const app = Vue.createApp({
                 '\u{1F64D}', 
                 '\u{1F64E}', 
                 '\u{1F64F}',
-
-
-                ],
+            ],
             user: {
                 name: 'Mandrake',
                 avatar: 'img/Logo maglietta - Versione finale.png',

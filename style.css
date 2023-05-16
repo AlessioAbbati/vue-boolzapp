@@ -185,7 +185,7 @@ body {
 }
 
 .controls i {
-    padding-inline: 1rem;
+    padding-inline: .5rem;
 }
 
 .controls input {
