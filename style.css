@@ -196,6 +196,26 @@ body {
     cursor: pointer;
 }
 
-.controls .dropdown-menu {
+.controls .emoji {
     width: 1rem;
+}
+
+.controls .attach {
+    background-color: transparent;
+    border: 0;
+    min-width: 0 !important;
+}
+
+.controls .attach .icons_container {
+    padding: .5rem;
+    background-color: aqua;
+    border-radius: 2rem;
+    margin-bottom: .5rem;
+    aspect-ratio: 1 / 1;
+
+}
+
+.controls .attach .icons_container i {
+    vertical-align: middle;
+    font-size: 1.2rem;
 }

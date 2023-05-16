@@ -99,7 +99,7 @@
                     aria-expanded="false">
                     <i class="fa-regular fa-face-smile dropdown"></i>
                 </button>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu emoji">
                     <template v-for="(emoticon, index) in emoticons">
                         <span @click="addEmoticon(index)">{{ emoticon }}</span>
 
@@ -110,11 +110,13 @@
                     aria-expanded="false">
                     <i class="bi bi-paperclip"></i>
                 </button>
-                <div class="dropdown-menu">
-                    <template v-for="(attach, index) in attachment">
-                        <i :class="['bi', attachment[index]]"></i>
+                <div class="dropdown-menu attach">
+                    <div class="d-flex flex-column" v-for="(attach, index) in attachment">
+                        <div class="icons_container">
+                            <i :class="['bi', attachment[index]]"></i>
+                        </div>
 
-                    </template>
+                    </div>
                 </div>
 
             
