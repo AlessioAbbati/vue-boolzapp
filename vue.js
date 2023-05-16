@@ -9,6 +9,14 @@ const app = Vue.createApp({
                 'bi-person-fill',
                 'bi-bar-chart-fill',
             ],
+            colors: [
+                'red',
+                'blue',
+                'green',
+                'yellow',
+                'purple',
+                'gray',
+            ],
             emoticons: [
                 '\u{1F600}', 
                 '\u{1F601}', 

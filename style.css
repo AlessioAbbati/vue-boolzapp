@@ -208,14 +208,13 @@ body {
 
 .controls .attach .icons_container {
     padding: .5rem;
-    background-color: aqua;
     border-radius: 2rem;
     margin-bottom: .5rem;
     aspect-ratio: 1 / 1;
-
 }
 
 .controls .attach .icons_container i {
     vertical-align: middle;
     font-size: 1.2rem;
+    color: white;
 }

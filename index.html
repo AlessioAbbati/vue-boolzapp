@@ -112,7 +112,7 @@
                 </button>
                 <div class="dropdown-menu attach">
                     <div class="d-flex flex-column" v-for="(attach, index) in attachment">
-                        <div class="icons_container">
+                        <div class="icons_container" :style="{ backgroundColor: colors[index % colors.length] }">
                             <i :class="['bi', attachment[index]]"></i>
                         </div>
 
